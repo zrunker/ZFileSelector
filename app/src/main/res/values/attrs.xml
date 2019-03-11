@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MaxHeightViewLayout">
+        <attr name="maxRadio" format="float|reference" />
+        <attr name="maxHeight" format="dimension|reference" />
+    </declare-styleable>
+
+</resources>
