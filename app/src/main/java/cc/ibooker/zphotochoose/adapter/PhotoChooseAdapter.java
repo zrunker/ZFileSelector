@@ -102,12 +102,6 @@ public class PhotoChooseAdapter extends BaseAdapter {
             public void onClick(View v) {
                 if (ClickUtil.isFastClick()) return;
                 boolean isChecked = holder.checkBox.isChecked();
-//                if (!isChecked) {
-//                    holder.imageView.setColorFilter(null);
-//                } else {
-//                    holder.imageView.setColorFilter(Color.parseColor("#77000000"));
-//                }
-
                 // 发送通讯
                 EventBus.getDefault().postSticky(new PhotoChooseCheckBoxEvent(filePath));
 
@@ -128,7 +122,8 @@ public class PhotoChooseAdapter extends BaseAdapter {
             holder.imageView.setMaxWidth(screenWidth / 3);
             holder.imageView.setMinimumHeight(screenWidth / 3 - 6);
         }
-        PhotoLoader.getInstance(3, PhotoLoader.Type.LIFO).loadImage(filePath, holder.imageView);
+        PhotoLoader.getInstance(3, PhotoLoader.Type.LIFO)
+                .loadImage(filePath, holder.imageView);
 
         holder.imageView.setColorFilter(null);
         holder.imageView.setOnClickListener(new View.OnClickListener() {

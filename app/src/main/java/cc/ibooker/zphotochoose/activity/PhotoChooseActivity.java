@@ -76,7 +76,6 @@ public class PhotoChooseActivity extends AppCompatActivity implements View.OnCli
     // 保存选中图片
     private ArrayList<String> selectedSet = new ArrayList<>();
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -330,8 +329,8 @@ public class PhotoChooseActivity extends AppCompatActivity implements View.OnCli
             photoChoosePopuwindow = new PhotoChoosePopuwindow(this);
         }
         photoChoosePopuwindow.setPhotoChoosePwindowAdapter(list, dirPath);
-        photoChoosePopuwindow.showViewTop(bottomLayout, 0);
-//        photoChoosePopuwindow.showBottom();
+//        photoChoosePopuwindow.showViewTop(bottomLayout, 0);
+        photoChoosePopuwindow.showBottom();
     }
 
     // 刷新GridView界面数据

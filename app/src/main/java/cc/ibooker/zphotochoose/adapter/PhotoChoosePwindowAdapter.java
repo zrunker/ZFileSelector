@@ -12,7 +12,6 @@ import cc.ibooker.zphotochoose.R;
 import cc.ibooker.zphotochoose.bean.FolderBean;
 import cc.ibooker.zphotochoose.viewholder.PhotoChoosePwindowHolder;
 
-
 /**
  * 选择图片弹窗Adapter
  *

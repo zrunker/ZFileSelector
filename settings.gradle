@@ -1,1 +1,1 @@
-include ':app', ':photochooselib'
+include ':app'
