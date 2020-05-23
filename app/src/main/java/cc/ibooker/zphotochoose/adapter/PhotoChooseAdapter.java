@@ -12,6 +12,8 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
@@ -117,6 +119,10 @@ public class PhotoChooseAdapter extends BaseAdapter {
         });
 
         // 图片加载，也可以采用Glide进行加载
+//        Glide.with(context)
+//                .load(filePath)
+//                .override(screenWidth / 3, screenWidth / 3)
+//                .into(holder.imageView);
         if (screenWidth > 0) {
             holder.imageView.setMaxHeight(screenWidth / 3);
             holder.imageView.setMaxWidth(screenWidth / 3);
